@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Refatorada</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        /*
+        ---------------------------------------------------
+        CSS INTERNO - Regras aplicadas APENAS NESTE ARQUIVO
+        ---------------------------------------------------
+        */
+        .cabecalho {
+            border-bottom: 5px dashed orange; /* Exemplo: sobrescrever a borda do cabeçalho */
+        }
+    </style>
+
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <p class="logo-texto">Minha Marca</p>
+        </div>
+        <nav class="navbar">
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <main class="conteudo-principal">
+
+        <section class="secao-apresentacao">
+            <h1 class="titulo-principal" style="color: purple;">Bem-vindo ao Nosso Site!</h1>
+            <h2 class="subtitulo">Explore e Aprenda!</h2>
+            <h3 class="destaque-rosa">Este é um destaque de texto.</h3>
+            <h4>Texto de Nível 4</h4>
+            <h5>Texto de Nível 5</h5>
+            <p class="paragrafo-geral">Este é um parágrafo de texto padrão para demonstração.</p>
+        </section>
+
+        <section class="info-card">
+            <img class="imagem-ilustrativa"
+                src="https://media.gettyimages.com/id/1500448395/pt/foto/cat-taking-a-selfie.jpg?s=612x612&w=gi&k=20&c=vmNcAZujLYWGJPDgxtFLH5Ih84eC03i6-Q9MlV7CYx4="
+                alt="Imagem de gato fazendo selfie">
+            <p class="legenda-imagem">Um gato moderno tirando uma selfie.</p>
+            <a class="link-externo" href="https://www.google.com" target="_blank">Visitar Google</a>
+        </section>
+
+        <section class="secao-formulario">
+            <h2 class="titulo-formulario">Formulário de Contato</h2>
+            <form id="formulario-contato" action="#" method="POST">
+                <label for="data-nascimento">Campo de Data:</label>
+                <input type="date" id="data-nascimento">
+
+                <label for="texto-curto">Nome:</label>
+                <input type="text" id="texto-curto" placeholder="Digite seu nome...">
+
+                <label for="email-usuario">Email:</label>
+                <input type="email" id="email-usuario" placeholder="seuemail@exemplo.com" style="background-color: lightgreen; color: black;">
+
+                <label for="senha-usuario">Senha:</label>
+                <input type="password" id="senha-usuario" placeholder="Digite sua senha...">
+
+                <label for="mensagem-longa">Mensagem:</label>
+                <textarea id="mensagem-longa" rows="4" placeholder="Deixe sua mensagem aqui..."></textarea>
+
+                <hr>
+
+                <button class="botao-envio" type="submit">Enviar Formulário</button>
+                <button class="botao-reset" type="reset">Limpar Campos</button>
+            </form>
+        </section>
+
+        <section class="secao-rodape-conteudo">
+            <p>Informação 1 da seção</p>
+            <p>Informação 2 da seção</p>
+        </section>
+
+    </main>
+
+    <footer class="rodape-pagina">
+        <p>&copy; 2023 Minha Empresa. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
